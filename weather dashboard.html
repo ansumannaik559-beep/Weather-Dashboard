@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Dashboard</title>
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body>
+        <header>
+            <section class="header-left-section">
+                <div class="icon-container">
+                    <img class="weather-icon" src="images/weather-icon.png">
+                </div>
+            </section>
+            <section class="header-middle-section">
+                <input class="place-name" type="text" placeholder="Place Name">
+                <button class="search-button"><img class="search-icon" src="images/search-icon.png"></button>
+            </section>
+            <section class="header-right-section">
+                <div class="day"></div>
+                <div class="date"></div>
+            </section>
+        </header>
+        <main>
+            <div>
+                <h1>Weather Dashboard</h1>
+            </div>
+            <div class="city-name-container">
+                <span>City Name: </span><span class="city-name">Delhi</span>
+            </div>
+            <section class="Today-stats">
+                <h3 class="heading">Today's Data</h3>
+                <div class="today-data">
+                    <div>Relative Humidity: </div>
+                    <div>Temperature: </div>
+                    <div>Wind Speed: </div>
+                </div>
+            </section>
+
+            <h3 class="heading">Expected data</h3>
+            <section class="Weekly-stats">
+                <section class="day1">
+                    <div>Date: </div>
+                    <div>Maximum Temperature: </div>
+                    <div>Mininmum Temperature: </div>
+                    <div>Weather Code: </div>
+                </section>
+            </section>
+        </main>
+        <script type="module" src="dashboard.js"></script>
+        <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    </body>
+</html>
